@@ -5,8 +5,11 @@ import gsap, { Power2 } from 'gsap'
 import 'animate.css'
 import { onMounted } from 'vue';
 
+let isTurnedOn = true;
 onMounted(() => {
+
   screenOn()
+
 })
 /**
  * Turns on and off the screen element.
@@ -18,33 +21,59 @@ function screenOn(): void {
   const SELECTOR_SCREEN_ELEMENT: string = '.screen';
   const SELECTOR_SWITCHER_TV: string = '#switcher-tv';
   
-  let isTurnedOn: boolean = true;
+  let offTimeline: gsap.core.Timeline;
+  let onTimeline: gsap.core.Timeline;
   
-  let timeline: gsap.core.Timeline;
   
   /**
    * Builds the timeline for turning on and off the screen element.
    *
    * @returns {void}
    */
-  function buildTimeline(): void {
-    timeline = gsap.timeline({
+  onTimeline = gsap.timeline({
+    paused: false
+  })
+
+  onTimeline
+  .to(SELECTOR_SCREEN_ELEMENT, {
+    duration: .01,
+    width: '0',
+    height: '0',
+    background: '#000000',
+  })
+  .to(SELECTOR_SCREEN_ELEMENT, {
+    duration: .2,
+    width: '100vw',
+    height: '2px',
+    background: '#ffffff',
+    ease: Power2.easeOut})
+  .to(SELECTOR_SCREEN_ELEMENT, {
+    duration: .2,
+    width: '100vw',
+    height: '100vh',
+    background: '#000000',
+    ease: Power2.easeOut
+  })
+
+    offTimeline = gsap.timeline({
       paused: true
     });
     
-    timeline
-    .to(SELECTOR_SCREEN_ELEMENT, .2, {
+    offTimeline
+    .to(SELECTOR_SCREEN_ELEMENT, {
+      duration: .2,
       width: '100vw',
       height: '2px',
       background: '#ffffff',
       ease: Power2.easeOut
     })
-    .to(SELECTOR_SCREEN_ELEMENT, .2, {
+    .to(SELECTOR_SCREEN_ELEMENT, {
+      duration: .2,
       width: '0',
       height: '0',
       background: '#ffffff'
     });
-  }
+  
   
   /**
    * Toggles the switcher TV to turn on or off the screen element.
@@ -53,23 +82,24 @@ function screenOn(): void {
    */
   function toggleSwitcherTV(): void {
     if (isTurnedOn) {
-      timeline.restart();
+     offTimeline.restart();
     }
     
     if (!isTurnedOn) {
-      timeline.reverse();
+      offTimeline.reverse();
     }
     
     isTurnedOn = !isTurnedOn;
+
   }
   
-  // Initialize
-  $(document).ready(buildTimeline);
   
   // Bindings
   $(document).on('click', SELECTOR_SWITCHER_TV, function() {
     toggleSwitcherTV();
+
   });
+
 
 }
 
