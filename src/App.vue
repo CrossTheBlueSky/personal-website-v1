@@ -1,107 +1,19 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import $ from 'jquery'
-import gsap, { Power2 } from 'gsap'
 import 'animate.css'
 import { onMounted } from 'vue';
+import screenEffect from './components/ScreenEffect'
 
 let isTurnedOn = true;
+
+
 onMounted(() => {
 
-  screenOn()
+  screenEffect(isTurnedOn)
+
 
 })
-/**
- * Turns on and off the screen element.
- *
- * @returns {void}
- */
-function screenOn(): void {
 
-  const SELECTOR_SCREEN_ELEMENT: string = '.screen';
-  const SELECTOR_SWITCHER_TV: string = '#switcher-tv';
-  
-  let offTimeline: gsap.core.Timeline;
-  let onTimeline: gsap.core.Timeline;
-  
-  
-  /**
-   * Builds the timeline for turning on and off the screen element.
-   *
-   * @returns {void}
-   */
-  onTimeline = gsap.timeline({
-    paused: false
-  })
-
-  onTimeline
-  .to(SELECTOR_SCREEN_ELEMENT, {
-    duration: .01,
-    width: '0',
-    height: '0',
-    background: '#000000',
-  })
-  .to(SELECTOR_SCREEN_ELEMENT, {
-    duration: .2,
-    width: '100vw',
-    height: '2px',
-    background: '#ffffff',
-    ease: Power2.easeOut})
-  .to(SELECTOR_SCREEN_ELEMENT, {
-    duration: .2,
-    width: '100vw',
-    height: '100vh',
-    background: '#000000',
-    ease: Power2.easeOut
-  })
-
-    offTimeline = gsap.timeline({
-      paused: true
-    });
-    
-    offTimeline
-    .to(SELECTOR_SCREEN_ELEMENT, {
-      duration: .2,
-      width: '100vw',
-      height: '2px',
-      background: '#ffffff',
-      ease: Power2.easeOut
-    })
-    .to(SELECTOR_SCREEN_ELEMENT, {
-      duration: .2,
-      width: '0',
-      height: '0',
-      background: '#ffffff'
-    });
-  
-  
-  /**
-   * Toggles the switcher TV to turn on or off the screen element.
-   *
-   * @returns {void}
-   */
-  function toggleSwitcherTV(): void {
-    if (isTurnedOn) {
-     offTimeline.restart();
-    }
-    
-    if (!isTurnedOn) {
-      offTimeline.reverse();
-    }
-    
-    isTurnedOn = !isTurnedOn;
-
-  }
-  
-  
-  // Bindings
-  $(document).on('click', SELECTOR_SWITCHER_TV, function() {
-    toggleSwitcherTV();
-
-  });
-
-
-}
 
 </script>
 
@@ -116,11 +28,10 @@ function screenOn(): void {
         <RouterLink to="/contact">Contact</RouterLink>
       </nav>
       <RouterView />
+      </div>
     </div>
-    </div>
-
-  </header>
-  <button id="switcher-tv">Turn on/off</button>
+  </header> 
+  <button class="metal linear power" id="switcher-tv"><svg id="power-svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-84 31.5-156.5T197-763l56 56q-44 44-68.5 102T160-480q0 134 93 227t227 93q134 0 227-93t93-227q0-67-24.5-125T707-707l56-56q54 54 85.5 126.5T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-360v-440h80v440h-80Z"/></svg></button>
 </template>
 
 
@@ -130,22 +41,47 @@ header {
   max-height: 100vh;
 }
 
-button {
+#power-svg:active{
+  fill: hsl(210, 100%, 40%);
+}
+
+.power{
+  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 1px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(0,0%, 0%,.15) 0 0px 2px 2px, /* outer SD */
+    hsla(0,0%,100%,.5) 0  0px 1px 2px; /* outer HL */ 
+  height: 2.75rem;
+  width: 2.75rem;
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  padding: 20px;
+  right: 50%;
+  bottom: 12px;
   font-weight: 700;
-  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.power:active{
+  color: hsl(210, 100%, 40%);
+  text-shadow: hsla(210,100%,20%,.3) 0 -1px 0, hsl(210,100%,85%) 0 2px 1px, hsla(200,100%,80%,1) 0 0 5px, hsla(210,100%,50%,.6) 0 0 20px;
+  box-shadow: 
+    inset hsla(210,100%,30%,  1) 0  0px 0px 4px, /* border */
+    inset hsla(210,100%,15%, .4) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(210,100%,20%,.25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(210,100%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(210,100%,75%, .8) 0  0px 1px 1px, /* outer SD */
+    hsla(210,50%,40%, .25) 0 -1px 3px 2px, /* outer SD */
+    hsla(210,80%,95%,   1) 0  -2px 4px 4px; /* outer HL */
 }
 
 .screen {
   background-color: var(--color-background-soft);
   position: fixed;
-  top: 50%;
+  top: 45.5%;
   left: 50%;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   transform: translate(-50%, -50%);
   animation-duration: 0.03s;
          animation-name: textflicker;
