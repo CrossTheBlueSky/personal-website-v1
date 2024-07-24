@@ -19,7 +19,7 @@ onMounted(() => {
 
 <template>
   <header>
-    <div class="wrapper">
+
       <div class="screen crt">
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -29,6 +29,8 @@ onMounted(() => {
       </nav>
       <RouterView />
       </div>
+
+    <div class="screen-off">
     </div>
   </header> 
   <button class="metal linear power" id="switcher-tv"><svg id="power-svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-84 31.5-156.5T197-763l56 56q-44 44-68.5 102T160-480q0 134 93 227t227 93q134 0 227-93t93-227q0-67-24.5-125T707-707l56-56q54 54 85.5 126.5T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-360v-440h80v440h-80Z"/></svg></button>
@@ -39,6 +41,18 @@ onMounted(() => {
 header {
   line-height: 1.5;
   max-height: 100vh;
+}
+
+.screen-off{
+  background-color: black;
+    position: fixed;
+    height: 87.5vh;
+    width: 93vw;
+    top: 45.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
 }
 
 #power-svg:active{
@@ -76,8 +90,10 @@ header {
     hsla(210,80%,95%,   1) 0  -2px 4px 4px; /* outer HL */
 }
 
+
 .screen {
   background-color: var(--color-background-soft);
+  padding: 10px;
   position: fixed;
   top: 45.5%;
   left: 50%;
@@ -89,6 +105,7 @@ header {
          animation-direction: alternate;
   content: " ";
   overflow: hidden;
+  z-index: 2;
 }
 
 
