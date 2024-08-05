@@ -1,0 +1,7 @@
+{
+    "scripts": {
+      "build:retro": "cd retro && npm run build",
+      "build:modern": "cd modern && npm run build",
+      "build": "npm run build:retro && npm run build:modern"
+    }
+  }
