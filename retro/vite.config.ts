@@ -10,10 +10,5 @@ export default defineConfig({
     vue(),
     vueJsx(),
   ],
-  base: '/retro/',
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
+  base: '/retro/'
 })
