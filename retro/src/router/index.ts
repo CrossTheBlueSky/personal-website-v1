@@ -5,12 +5,12 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/retro',
       name: 'home',
       component: HomeView
     },
     {
-      path: '/about',
+      path: '/retro/about',
       name: 'about',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -18,12 +18,12 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/projects',
+      path: '/retro/projects',
       name: 'projects',
       component: () => import('../views/ProjectsView.vue')
     },
     {
-      path: '/contact',
+      path: '/retro/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue')
     }

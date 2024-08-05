@@ -14,24 +14,21 @@ import Blog from './routes/Blog.jsx'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/modern',
     element: <Home/>,
   },
   {
-    path: '/about',
+    path: '/modern/about',
     element: <About />,},
   {
-    path: '/projects',
+    path: '/modern/projects',
     element: <Projects />,},
-    {path: '/blog',
+    {path: '/modern/blog',
     element: <Blog />,
     },
   {
-    path: '/contact',
+    path: '//modern/contact',
     element: <Contact/>,},
-  {
-    path: '/modern',
-    element: <div>Modern</div>,},
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
