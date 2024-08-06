@@ -1,13 +1,16 @@
 {
-    "rewrites": [
-      { "source": "/modern", "destination": "/modern/index.html" },
-      { "source": "/modern/(.*)", "destination": "/modern/$1" },
-      { "source": "/retro", "destination": "/retro/index.html" },
-      { "source": "/retro/(.*)", "destination": "/retro/$1" },
-      { "source": "/(.*)", "destination": "/retro/$1" }
-    ],
-    "builds": [
-      { "src": "retro/package.json", "use": "@vercel/static-build" },
-      { "src": "modern/package.json", "use": "@vercel/static-build" }
-    ]
-  }
+  "rewrites": [
+    { "source": "/modern", "destination": "/modern/index.html" },
+    { "source": "/modern/(.*)", "destination": "/modern/$1" },
+    { "source": "/retro", "destination": "/retro/index.html" },
+    { "source": "/retro/(.*)", "destination": "/retro/$1" },
+    { "source": "/(.*)", "destination": "/retro/$1" }
+  ],
+  "redirects": [
+    { "source": "/", "destination": "/retro", "permanent": false }
+  ],
+  "builds": [
+    { "src": "retro/package.json", "use": "@vercel/static-build" },
+    { "src": "modern/package.json", "use": "@vercel/static-build" }
+  ]
+}
