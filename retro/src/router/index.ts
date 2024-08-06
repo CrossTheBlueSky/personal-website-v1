@@ -1,27 +1,31 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import AboutView from '../views/AboutView.vue'
+import ProjectsView from '../views/ProjectsView.vue'
+import ContactView from '../views/ContactView.vue'
+
 
 const router = createRouter({
   history: createWebHistory('/retro'),
   routes: [
     {
-      path: '/retro',
+      path: '/',
       name: 'home',
       component: HomeView
     },
     {
-      path: '/retro/about',
+      path: '/about',
       name: 'about',
 
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/retro/projects',
+      path: '/projects',
       name: 'projects',
       component: () => import('../views/ProjectsView.vue')
     },
     {
-      path: '/retro/contact',
+      path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue')
     }

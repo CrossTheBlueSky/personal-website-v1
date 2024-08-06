@@ -56,13 +56,14 @@
 }
 
 .wrapper {
-  margin: 2.5rem 3rem;
+  margin:auto;
   display: grid;
 
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(2, 1fr);
 grid-column-gap: 5rem;
 grid-row-gap: 0px;
+
 }
 
 @media (min-width: 1024px) {
