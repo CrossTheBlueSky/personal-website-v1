@@ -1,4 +1,4 @@
-import {SimpleGrid, Image, Center} from '@mantine/core'
+import {SimpleGrid, Image} from '@mantine/core'
 
 
 function Home(){
@@ -11,7 +11,7 @@ function Home(){
                 <p>I make things for computers</p>
             </div>
             <div>
-            <Image  h='400px'src='src/assets/derek-no-scanlines.jpg' alt="derek-mercedes" />
+            <Image  h='400px'src='modern/public/derek-no-scanlines.jpg' alt="derek-mercedes" />
             </div>
         </SimpleGrid>
         </>

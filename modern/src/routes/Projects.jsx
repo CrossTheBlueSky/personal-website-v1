@@ -1,4 +1,4 @@
-import { Center, SimpleGrid, Title } from '@mantine/core'
+import { Center, SimpleGrid, Title, Image } from '@mantine/core'
 
 function Projects(){
 
@@ -15,13 +15,13 @@ function Projects(){
         <p>React, Redux, Node, Express, MongoDB, MantineUI</p>
       </div>
       <div className = "nearby-image">
-        <img src = "src/assets/pixel-dragon.jfif" alt = "pixel dragon" width = "300"/>
+        <Image src = "pixel-dragon.jfif" alt = "pixel dragon" w = "300"/>
       </div>
       <div className = "milestone-image">
-        <img src= "src/assets/milestone-splash-1.png" alt = "milestone" width = "300"/>
+        <img src= "milestone-splash-1.png" alt = "milestone" width = "300"/>
       </div>
       <div className = "milestone-text">
-        <h2>Milestone Fitness</h2>
+        <h2>Milestone Fitness </h2>
         <Title order={4} fs="italic">Every step is a goal achieved.</Title>
         <p> A fitness app that utilizes machine learning to break down larger fitness goals into smaller steps.</p>
         <br/>
@@ -37,7 +37,7 @@ function Projects(){
         <p>React, Python, SQLAlchemy, Flask, TailwindCSS, ChartJS</p>
       </div>
       <div className = "ebb-image">
-        <img src = "src/assets/ebb-placeholder.jpeg" alt = "ebb" width = "300"/>
+        <img src = "ebb-placeholder.jpeg" alt = "ebb" width = "300"/>
 
       </div>
     </SimpleGrid>

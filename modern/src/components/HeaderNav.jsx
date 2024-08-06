@@ -3,11 +3,11 @@ import * as classes from '../styles/HeaderNav.modules.css';
 import { useDisclosure } from '@mantine/hooks';
 
 const links = [
-  { link: '/', label: 'Home' },
-  { link: '/about', label: 'About' },
-  {link: '/projects', label: 'Projects'},
-  { link: '/blog', label: 'Blog' },
-  { link: '/contact', label: 'Contact' },
+  { link: '/modern', label: 'Home' },
+  { link: '/modern/about', label: 'About' },
+  {link: '/modern/projects', label: 'Projects'},
+  { link: '/modern/blog', label: 'Blog' },
+  { link: '/modern/contact', label: 'Contact' },
 
 ];
 

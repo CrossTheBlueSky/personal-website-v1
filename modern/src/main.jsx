@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     element: <Blog />,
     },
   {
-    path: '//modern/contact',
+    path: '/modern/contact',
     element: <Contact/>,},
 ])
 
