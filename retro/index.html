@@ -8,78 +8,90 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Derek Mercedes Portfolio (Vue version)</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: hsla(0,0%,90%,1);  
+        background-image: linear-gradient(-45deg, hsla(0, 0%, 14%, 0), hsla(0,0%,0%,.05));
+        background-size: 100vw 100vh;
+        scrollbar-color: cornflowerblue hsla(0,0%,14%,0);
+      }
+      .metal {
+        background-color: hsl(0,0%,80%);
+        box-shadow: inset hsla(0,0%,15%,1) 0 0px 0px 2px,
+                    inset hsla(0,0%,15%,.8) 0 -1px 5px 4px,
+                    inset hsla(0,0%,10%,0.25) 0 -1px 0px 7px,
+                    inset hsla(0,0%,100%,.7) 0 2px 1px 7px,
+                    hsla(0,0%,0%,.15) 0 -5px 6px 4px,
+                    hsla(0,0%,100%,.5) 0 5px 2px 4px;
+        transition: color .2s;
+      }
+      .monitor-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url('/monitor_16_9_v2.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #592d2d;
+      }
+      .screen-container {
+        position: absolute;
+        top: 49%;
+        left: 50.25%;
+        transform: translate(-50%, -50%);
+        width: 47.15%;
+        height: 66.5%;
+        max-width: 47.15%;
+        max-height: 66.5%;
+        overflow: hidden;
+        border-radius: 7% / 9%;
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+      }
+      #app {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 2vmin;
+      }
+      @media (max-aspect-ratio: 16/9) {
+        .monitor-container {
+          background-size: auto 100%;
+        }
+        .screen-container {
+          width: calc(47.15vw * (16/9) / (var(--aspect-ratio)));
+          height: 66.5vh;
+        }
+      }
+      @media (min-aspect-ratio: 16/9) {
+        .monitor-container {
+          background-size: 100% auto;
+        }
+        .screen-container {
+          width: 47.15vw;
+          height: calc(66.5vh * (var(--aspect-ratio)) / (16/9));
+        }
+      }
+      @media (max-width: 768px) {
+        #app { font-size: 14px; }
+      }
+    </style>
   </head>
   <body class="metal">
     <div class="monitor-container">
       <div class="screen-container">
-    <div id="app"></div>
+        <div id="app"></div>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+      function updateAspectRatio() {
+        document.documentElement.style.setProperty('--aspect-ratio', window.innerWidth / window.innerHeight);
+      }
+      window.addEventListener('resize', updateAspectRatio);
+      updateAspectRatio();
+    </script>
   </body>
 </html>
-
-<style>
-
-  .monitor-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url('/monitor_16_9_v2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-  }
-
-  .screen-container{
-    position: absolute;
-    top: 49%;
-    left: 50.25%;
-    transform: translate(-50%, -50%);
-    width: 47.15%;
-    height: 66.5%;
-    overflow: hidden;
-    border-radius: 7% / 9%;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
-  }
-  html{
-    background-color: hsla(0,0%,90%,1);  
-  background-image: linear-gradient(-45deg, hsla(0, 0%, 14%, 0), hsla(0,0%,0%,.05) );
-  background-size: 100vw 100vh;
-  scrollbar-color: cornflowerblue hsla(0,0%,14%,0);
-}
-
-  .metal {
-    background-color: hsl(0,0%,80%);
-  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 2px, /* border */
-    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
-    inset hsla(0, 0%, 10%, 0.25) 0 -1px 0px 7px, /* bottom SD */
-    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
-    
-    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
-    hsla(0,0%,100%,.5) 0  5px 2px 4px; /* outer HL */ 
-  
-  transition: color .2s;
-
-}
-
-.metal.linear{
-  background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
-    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
-    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
-}
-
-@media (max-aspect-ratio: 4/3) {
-  .monitor-container {
-    background-size: auto 100%;
-  }
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .monitor-container {
-    background-size: 100% auto;
-  }
-}
-
-</style>
