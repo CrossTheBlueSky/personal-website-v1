@@ -57,6 +57,7 @@
 
 .wrapper {
   width: 100vw;
+  margin: 0 auto;
   display: grid;
 
 grid-template-columns: repeat(2, 1fr);
