@@ -14,7 +14,7 @@ import Blog from './routes/Blog.jsx'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/modern',
     element: <Home/>,
   },
   {
