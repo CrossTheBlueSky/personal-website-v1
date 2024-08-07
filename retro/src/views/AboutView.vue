@@ -16,9 +16,9 @@
 <style>
 @media (min-width: 1024px) {
   .about {
-    margin: 25px;
-    min-height: 100vh;
-    align-items: center;
+    margin: 5vw;
+    width: 100vh;
+
   }
 }
 </style>

@@ -40,7 +40,7 @@ onMounted(() => {
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 .screen-off{

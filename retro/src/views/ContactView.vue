@@ -18,9 +18,10 @@
     .contact {
       display: flex;
       flex-direction:column;
-      font-size: 20px;
-      margin: 50px;
-      min-height: 100vh;
+      font-size: 1.2rem;
+        margin: 3rem;
+        min-height: 100vh;
+        
       align-items: center;
     }
   }

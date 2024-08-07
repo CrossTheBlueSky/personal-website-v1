@@ -50,6 +50,7 @@ grid-template-rows: repeat(3, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 height: 87.5vh;
+margin: 5vh 5vw 0 5vw;
 overflow: auto;
 
 }
