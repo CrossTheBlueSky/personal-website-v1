@@ -93,7 +93,7 @@ header {
 
 .screen {
   background-color: var(--color-background-soft);
-  margin: 0px;
+  margin: 0 auto;
   position: fixed;
   top: 45.5%;
   left: 50%;
