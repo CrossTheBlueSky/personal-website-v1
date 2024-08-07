@@ -133,9 +133,10 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1920px) {
   header {
     display: flex;
+    height: 100vh;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
