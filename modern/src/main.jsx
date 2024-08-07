@@ -14,20 +14,20 @@ import Blog from './routes/Blog.jsx'
 
 const router = createBrowserRouter([
   {
-    path: '/modern',
+    path: '/',
     element: <Home/>,
   },
   {
-    path: '/modern/about',
+    path: '/about',
     element: <About />,},
   {
-    path: '/modern/projects',
+    path: '/projects',
     element: <Projects />,},
-    {path: '/modern/blog',
+    {path: '/blog',
     element: <Blog />,
     },
   {
-    path: '/modern/contact',
+    path: '/contact',
     element: <Contact/>,},
 ])
 
