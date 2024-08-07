@@ -33,7 +33,7 @@ onMounted(() => {
     <div class="screen-off">
     </div>
   </header> 
-  <button class="metal linear power" id="switcher-tv"><svg id="power-svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-84 31.5-156.5T197-763l56 56q-44 44-68.5 102T160-480q0 134 93 227t227 93q134 0 227-93t93-227q0-67-24.5-125T707-707l56-56q54 54 85.5 126.5T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-360v-440h80v440h-80Z"/></svg></button>
+  <!-- <button class="power" id="switcher-tv"><svg id="power-svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-84 31.5-156.5T197-763l56 56q-44 44-68.5 102T160-480q0 134 93 227t227 93q134 0 227-93t93-227q0-67-24.5-125T707-707l56-56q54 54 85.5 126.5T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-360v-440h80v440h-80Z"/></svg></button> -->
 </template>
 
 
@@ -61,17 +61,17 @@ header {
 }
 
 .power{
-  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 1px, /* border */
-    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
-    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
-    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+  box-shadow: inset #8a7d5d 0  0px 0px 1px, /* border */
+    inset #8a7d5d 0 -1px 5px 4px, /* soft SD */
+    inset #8a7d5d 0 -1px 0px 7px, /* bottom SD */
+    inset #8a7d5d 0  2px 1px 7px, /* top HL */
     
-    hsla(0,0%, 0%,.15) 0 0px 2px 2px, /* outer SD */
-    hsla(0,0%,100%,.5) 0  0px 1px 2px; /* outer HL */ 
+    #8a7d5d 0 0px 2px 2px, /* outer SD */
+    #8a7d5d 0  0px 1px 2px; /* outer HL */ 
   height: 2.75rem;
   width: 2.75rem;
-  position: fixed;
-  right: 50%;
+  position: absolute;
+  left: 10%;
   bottom: .9rem;
   font-weight: 700;
   font-family: 'Noto Sans', sans-serif;
@@ -106,6 +106,9 @@ header {
          animation-iteration-count: infinite;
          animation-direction: alternate;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
 }
 
