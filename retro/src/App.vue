@@ -71,7 +71,7 @@ header {
   width: 2.75rem;
   position: fixed;
   right: 50%;
-  bottom: 12px;
+  bottom: .9rem;
   font-weight: 700;
   font-family: 'Noto Sans', sans-serif;
 }
