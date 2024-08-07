@@ -12,7 +12,7 @@
       <a href="https://derekmercedes.com/modern" >I hate this retro look</a>
     </div>
     <div class = "self-image">
-    <img src="../assets/derek.png" alt="derek" width="275">
+    <img src="../assets/derek.png" alt="derek" width="350px">
     </div>
 
     </div>
@@ -52,7 +52,7 @@
 .self-image {
   grid-area: 1 / 2 / 3 / 3; 
   padding-left: 5rem;
-  padding-top: 2.5rem;
+  padding-top: .5rem;
 }
 
 .wrapper {
@@ -67,6 +67,7 @@ grid-row-gap: 0px;
 }
 
 @media (min-width: 1024px) {
+
   .home {
     min-height: 100vh;
     display: flex;

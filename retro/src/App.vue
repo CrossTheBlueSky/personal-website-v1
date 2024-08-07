@@ -133,7 +133,7 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1200px) {
   header {
     display: flex;
     height: 100vh;
@@ -151,6 +151,19 @@ nav a:first-of-type {
   nav {
     text-align: left;
     font-size: 1rem;
+  }
+}
+
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+    max-width: 100%;
+    padding: 0 5%;
   }
 }
 
