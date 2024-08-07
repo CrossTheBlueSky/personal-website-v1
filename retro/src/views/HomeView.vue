@@ -9,7 +9,7 @@
       <RouterLink to ="/projects">What kind of things?</RouterLink>
       <RouterLink to="/about">Who are you, exactly?</RouterLink>
       <RouterLink to="/contact">I want to reach out</RouterLink>
-      <RouterLink to="/modern">I hate this retro look</RouterLink>
+      <a href="https://derekmercedes.com/modern" >I hate this retro look</a>
     </div>
     <div class = "self-image">
     <img src="../assets/derek.png" alt="derek" width="275">
