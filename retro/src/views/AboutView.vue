@@ -1,6 +1,9 @@
 <template>
-  <RouterLink to="/">Back to Home</RouterLink>
+  <div class="about-container-wrapper">
+    <RouterLink class="about-return" to="/">Back to Home</RouterLink>
+  <div class="about-container">
   <div class="about">
+    <div class="about-text">
     <h1>About Me</h1>
     <p>
     Hey there! I'm Derek Mercedes, a Full Stack Developer based in Denver, Colorado. 
@@ -10,15 +13,57 @@
     So if you're looking for someone who combines technical know-how with creativity and a love for other humans, you're in the right place. 
     Let's create something awesome together!
     </p>
+    </div>
+  <div class="about-image">
+    <img src="/src/assets/derek.png" alt="derek-mercedes" />
+  </div>
+</div>
+</div>
   </div>
 </template>
-
 <style>
-@media (min-width: 1024px) {
-  .about {
-    margin: 5vw;
-    width: 100vh;
 
+.about-return{
+  margin-left: 5rem;
+}
+
+.about-container-wrapper {
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  width: 53vw;
+  height: 58vh;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 95%;
+
+}
+
+.about {
+  display: flex;
+    width: 50vw;
+    margin: 0 4rem;
   }
+
+.about-text{
+  flex: 1;
+  padding: 20px;
+}
+
+.about-image {
+  flex: 1;
+  align-items: center;
+  justify-content:center;
+}
+
+.about-image img {
+  margin-top:4rem;
+  width: 70%;
+  height: 80%;
+  object-fit: cover;
 }
 </style>
