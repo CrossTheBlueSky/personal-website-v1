@@ -45,13 +45,14 @@ header {
 
 .screen-off{
   background-color: black;
-    position: fixed;
-    height: 87.5vh;
-    width: 93vw;
-    top: 45.5%;
-    left: 50%;
+
+  position: absolute;
+    top: 50%;
+    left: 50.5%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 
 }
 
@@ -74,6 +75,7 @@ header {
   bottom: .9rem;
   font-weight: 700;
   font-family: 'Noto Sans', sans-serif;
+  z-index: 3;
 }
 
 .power:active{
@@ -93,17 +95,16 @@ header {
 
 .screen {
   background-color: var(--color-background-soft);
-  margin: 0 auto;
-  position: fixed;
-  top: 45.5%;
+  position: absolute;
+  top: 50%;
   left: 50%;
-  width: 100%;
   transform: translate(-50%, -50%);
+  width: 54%;
+  height: 40.5%;
   animation-duration: 0.03s;
          animation-name: textflicker;
          animation-iteration-count: infinite;
          animation-direction: alternate;
-  content: " ";
   overflow: hidden;
   z-index: 2;
 }

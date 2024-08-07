@@ -10,12 +10,39 @@
     <title>Derek Mercedes Portfolio (Vue version)</title>
   </head>
   <body class="metal">
+    <div class="monitor-container">
+      <div class="screen-container">
     <div id="app"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
 
 <style>
+
+  .monitor-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/monitor_16_9_v2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+
+  .screen-container{
+    position: absolute;
+    top: 49%;
+    left: 50.25%;
+    transform: translate(-50%, -50%);
+    width: 47.15%;
+    height: 66.5%;
+    overflow: hidden;
+    border-radius: 7% / 9%;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+  }
   html{
     background-color: hsla(0,0%,90%,1);  
   background-image: linear-gradient(-45deg, hsla(0, 0%, 14%, 0), hsla(0,0%,0%,.05) );
@@ -42,4 +69,17 @@
     -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
     -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
 }
+
+@media (max-aspect-ratio: 4/3) {
+  .monitor-container {
+    background-size: auto 100%;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .monitor-container {
+    background-size: 100% auto;
+  }
+}
+
 </style>
