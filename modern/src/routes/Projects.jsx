@@ -1,49 +1,77 @@
-import { Center, SimpleGrid, Title, Image } from '@mantine/core'
+import React, { useState } from 'react';
+import { Container, Row, Col, Modal } from 'react-bootstrap';
+import ProjectCard from '../components/ProjectCard';
 
-function Projects(){
+function Projects() {
+  const [show, setShow] = useState(false);
+  const [activeProject, setActiveProject] = useState(null);
 
-    return (
-        <>
-        <Center>
-    <SimpleGrid m='50px' cols = {2} className="projects">
-      <div className = "nearby-text">
-        <h2>D&D Nearby</h2>
-        <Title order={4} fs="italic">Because sometimes beyond is too far</Title>
-        <p>An App I made to streamline the creation of characters for 5e Dungeons and Dragons.</p>
-        <br/>
-        <h5>Stack:</h5>
-        <p>React, Redux, Node, Express, MongoDB, MantineUI</p>
-      </div>
-      <div className = "nearby-image">
-        <Image src = "pixel-dragon.jfif" alt = "pixel dragon" w = "300"/>
-      </div>
-      <div className = "milestone-image">
-        <img src= "milestone-splash-1.png" alt = "milestone" width = "300"/>
-      </div>
-      <div className = "milestone-text">
-        <h2>Milestone Fitness </h2>
-        <Title order={4} fs="italic">Every step is a goal achieved.</Title>
-        <p> A fitness app that utilizes machine learning to break down larger fitness goals into smaller steps.</p>
-        <br/>
-        <h5>Stack:</h5>
-        <p>React, Python, SQLAlchemy, Flask, Bootstrap</p>
-      </div>
-      <div className = "ebb-text">
-        <h2>Ebb - A Journaling App </h2>
-        <Title order={4} fs="italic"> Find your flow </Title>
-        <p> A journaling app that tracks and visualizes your mood patterns over time</p>
-        <br/>
-        <h5>Stack:</h5>
-        <p>React, Python, SQLAlchemy, Flask, TailwindCSS, ChartJS</p>
-      </div>
-      <div className = "ebb-image">
-        <img src = "ebb-placeholder.jpeg" alt = "ebb" width = "300"/>
+  const handleClose = () => setShow(false);
+  const handleShow = (project) => {
+    setActiveProject(project);
+    setShow(true);
+  };
 
-      </div>
-    </SimpleGrid>
-    </Center>
-        </>
-    )
+  const projects = [
+    {
+      id: 1,
+      name: "Project 1",
+      image: "https://via.placeholder.com/300x200",
+      technologies: ["React", "Node.js", "MongoDB"],
+      description: "This is a more detailed description of Project 1. It includes information about the project's purpose, challenges faced, and solutions implemented.",
+      modalImage: "https://via.placeholder.com/600x400",
+      github: "https://github.com/yourusername/project1",
+      demo: "https://project1-demo.com"
+    },
+    {
+      id: 2,
+      name: "Project 2",
+      image: "https://via.placeholder.com/300x200",
+      technologies: ["Vue.js", "Express", "PostgreSQL"],
+      description: "This is a more detailed description of Project 2. It includes information about the project's purpose, challenges faced, and solutions implemented.",
+      modalImage: "https://via.placeholder.com/600x400",
+      github: "https://github.com/yourusername/project2",
+      demo: "https://project2-demo.com"
+    },
+    {
+      id: 3,
+      name: "Project 3",
+      image: "https://via.placeholder.com/300x200",
+      technologies: ["Angular", "Django", "MySQL"],
+      description: "This is a more detailed description of Project 3. It includes information about the project's purpose, challenges faced, and solutions implemented.",
+      modalImage: "https://via.placeholder.com/600x400",
+      github: "https://github.com/yourusername/project3",
+      demo: "https://project3-demo.com"
+    }
+  ];
+
+  return (
+    <Container>
+      <h1 className="text-center mb-4">My Projects</h1>
+      <Row>
+        {projects.map((project) => (
+          <Col md={4} key={project.id} className="mb-4">
+            <ProjectCard project={project} onLearnMore={handleShow} />
+          </Col>
+        ))}
+      </Row>
+
+      <Modal show={show} onHide={handleClose} size="lg">
+        <Modal.Header closeButton>
+          <Modal.Title>{activeProject?.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <img src={activeProject?.modalImage} alt={activeProject?.name} className="img-fluid mb-3" />
+          <p>{activeProject?.description}</p>
+          <p><strong>Technologies:</strong> {activeProject?.technologies.join(", ")}</p>
+          <p>
+            <a href={activeProject?.github} target="_blank" rel="noopener noreferrer" className="me-3">GitHub Repo</a>
+            <a href={activeProject?.demo} target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </p>
+        </Modal.Body>
+      </Modal>
+    </Container>
+  );
 }
 
-export default Projects
+export default Projects;
