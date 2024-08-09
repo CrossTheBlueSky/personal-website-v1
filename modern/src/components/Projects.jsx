@@ -46,11 +46,11 @@ function Projects() {
   ];
 
   return (
-    <Container>
+    <Container className="py-5">
       <h1 className="text-center mb-4">My Projects</h1>
-      <Row>
+      <Row className="g-4">
         {projects.map((project) => (
-          <Col md={4} key={project.id} className="mb-4">
+          <Col xs={12} sm={6} md={4} key={project.id}>
             <ProjectCard project={project} onLearnMore={handleShow} />
           </Col>
         ))}
@@ -64,10 +64,10 @@ function Projects() {
           <img src={activeProject?.modalImage} alt={activeProject?.name} className="img-fluid mb-3" />
           <p>{activeProject?.description}</p>
           <p><strong>Technologies:</strong> {activeProject?.technologies.join(", ")}</p>
-          <p>
-            <a href={activeProject?.github} target="_blank" rel="noopener noreferrer" className="me-3">GitHub Repo</a>
-            <a href={activeProject?.demo} target="_blank" rel="noopener noreferrer">Live Demo</a>
-          </p>
+          <div className="d-flex flex-wrap">
+            <a href={activeProject?.github} target="_blank" rel="noopener noreferrer" className="btn btn-primary me-2 mb-2">GitHub Repo</a>
+            <a href={activeProject?.demo} target="_blank" rel="noopener noreferrer" className="btn btn-secondary mb-2">Live Demo</a>
+          </div>
         </Modal.Body>
       </Modal>
     </Container>

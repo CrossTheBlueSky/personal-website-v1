@@ -9,4 +9,5 @@ export default defineConfig({
     assetsDir: 'assets',
     emptyOutDir: true,
   },
+  assetsInclude: ['**/*.jpg', '**/*.png', '**/*.svg'],
 })
