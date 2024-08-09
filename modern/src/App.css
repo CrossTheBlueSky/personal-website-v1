@@ -1,30 +1,65 @@
-/* Existing styles */
+
 html {
   scroll-behavior: smooth;
-  font-family: "Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Theme variables */
 :root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --border-color: #007bff;
-  --secondary-bg: #f8f9fa;
-  --secondary-text: #6c757d;
+  --color-bg-primary: #f0f4f8;
+  --color-bg-secondary: #ffffff;
+  --color-text-primary: #1a202c;
+  --color-text-secondary: #4a5568;
+  --color-accent-primary: #4299e1;   /* Blue */
+  --color-accent-secondary: #48bb78; /* Green */
+  --color-accent-tertiary: #ed8936;  /* Orange */
+  --color-border: #e2e8f0;
+  --color-card-bg: #ffffff;
+  --color-success: #48bb78;
+  --color-error: #f56565;
+  --gradient-accent: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);
+
 }
 
 body.dark-mode {
-  --bg-color: #1a1a1a;
-  --text-color: #ffffff;
-  --border-color: #4dabf7;
-  --secondary-bg: #2c3e50;
-  --secondary-text: #bdc3c7;
+  --color-bg-primary: #1a202c;
+  --color-bg-secondary: #2d3748;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #a0aec0;
+  --color-accent-primary: #63b3ed;
+  --color-accent-secondary: #68d391;
+  --color-accent-tertiary: #fbd38d;
+  --color-border: #4a5568;
+  --color-card-bg: #2d3748;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
   transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--color-accent);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--color-text-secondary);
+}
+
+button, .btn {
+  background-color: var(--color-accent);
+  color: var(--color-bg-primary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--color-text-secondary);
 }
 
 #root {
@@ -39,7 +74,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: var(--secondary-bg);
+  background-color: var(--color-bg-secondary);
   border-radius: 8px;
   transition: transform 0.3s ease, background-color 0.3s;
 }
@@ -48,7 +83,8 @@ body {
   width: 200px;
   height: 200px;
   margin: 0 auto;
-  border: 3px solid var(--border-color);
+  border: 3px solid;
+  border-color: var(--color-border);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -61,7 +97,7 @@ body {
 
 .hero {
   padding: 80px 0;
-  background-color: var(--secondary-bg);
+  background-color: var(--color-bg-secondary);
   transition: background-color 0.3s;
 }
 
@@ -71,7 +107,7 @@ body {
 }
 
 .hero h2 {
-  color: var(--secondary-text);
+  color: var(--color-text-secondary);
   margin-bottom: 30px;
 }
 
@@ -123,10 +159,10 @@ body {
 }
 
 .read-the-docs {
-  color: var(--secondary-text);
+  color: var(--color-text-secondary);
 }
 
-/* Theme toggle styles */
+
 .theme-toggle {
   position: absolute;
   top: 1rem;
@@ -134,6 +170,6 @@ body {
 }
 
 .form-check-input:checked {
-  background-color: var(--border-color);
-  border-color: var(--border-color);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
 }

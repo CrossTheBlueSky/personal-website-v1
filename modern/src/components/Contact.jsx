@@ -9,10 +9,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically handle the form submission,
-    // such as sending the data to a server or email service
     console.log('Form submitted:', { name, email, message });
-    // Reset form fields
     setName('');
     setEmail('');
     setMessage('');
@@ -24,17 +21,20 @@ function Contact() {
       <Row>
         <Col md={6} className="mb-4 mb-md-0">
           <h3>Get in Touch</h3>
-          <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+          <p>Reach out to me via email, or find me at the links below!</p>
           <div className="d-flex mb-3">
             <FaEnvelope className="me-2" />
-            <span>derek.mercedes@example.com</span>
+            <span>derek.mercedes@gmail.com</span>
           </div>
           <div className="mb-3">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="me-3">
+            <a href="https://github.com/crossthebluesky" target="_blank" rel="noopener noreferrer" className="me-3">
               <FaGithub size={24} />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/derek-mercedes" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={24} />
+            </a>
+            <a href="https://dev.to/crossthebluesky" target="_blank" rel="noopener noreferrer">
+              <FaEnvelope size={24} />
             </a>
           </div>
         </Col>

@@ -19,9 +19,9 @@ function About() {
             className="d-block mx-auto"
           />
         </Col>
-        <Col xs={12} md={8}>
+        <Col xs={12} md={8} className="text-start">
           <p>
-            Hey there! I'm Derek Mercedes, a Full Stack Developer based in Denver, Colorado. 
+            Hey there! I'm Derek Mercedes, a Full Stack Software Developer based in Denver, Colorado. 
             My journey into tech has been a bit of an adventure - from crafting AI for video games at Full Sail University to managing teams in the hospitality industry, and finally finding my true calling in web development.
           </p>
           <p>

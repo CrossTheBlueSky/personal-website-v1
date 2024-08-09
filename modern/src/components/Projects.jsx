@@ -15,33 +15,33 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      name: "Project 1",
+      name: "D&D Nearby",
       image: "https://via.placeholder.com/300x200",
-      technologies: ["React", "Node.js", "MongoDB"],
-      description: "This is a more detailed description of Project 1. It includes information about the project's purpose, challenges faced, and solutions implemented.",
-      modalImage: "https://via.placeholder.com/600x400",
-      github: "https://github.com/yourusername/project1",
-      demo: "https://project1-demo.com"
+      technologies: ["React", "Redux", "Node.js", "MongoDB", "MantineUI"],
+      description: "An App I made to streamline the creation of characters for 5e Dungeons and Dragons.",
+      modalImage: "",
+      github: "https://github.com/CrossTheBlueSky/DnD-Nearby-5e-Character-Builder",
+      demo: "#"
     },
     {
       id: 2,
-      name: "Project 2",
+      name: "Milestone Fitness",
       image: "https://via.placeholder.com/300x200",
-      technologies: ["Vue.js", "Express", "PostgreSQL"],
-      description: "This is a more detailed description of Project 2. It includes information about the project's purpose, challenges faced, and solutions implemented.",
-      modalImage: "https://via.placeholder.com/600x400",
-      github: "https://github.com/yourusername/project2",
-      demo: "https://project2-demo.com"
+      technologies: ["React", "Python", "SQLAlchemy", "Flask", "Bootstrap"],
+      description: " A fitness app that utilizes machine learning to break down large fitness goals into smaller steps.",
+      modalImage: "",
+      github: "https://github.com/CrossTheBlueSky/Milestone-Fitness-App",
+      demo: "#"
     },
     {
       id: 3,
-      name: "Project 3",
+      name: "Ebb - A Journaling App",
       image: "https://via.placeholder.com/300x200",
-      technologies: ["Angular", "Django", "MySQL"],
-      description: "This is a more detailed description of Project 3. It includes information about the project's purpose, challenges faced, and solutions implemented.",
-      modalImage: "https://via.placeholder.com/600x400",
-      github: "https://github.com/yourusername/project3",
-      demo: "https://project3-demo.com"
+      technologies: ["React", "Python", "TailwindCSS", "ChartJS", "PostgreSQL"],
+      description: " A journaling app that tracks and visualizes your mood patterns over time",
+      modalImage: "",
+      github: "https://github.com/CrossTheBlueSky/Ebb---Mood-Tracking-and-Journaling",
+      demo: "#"
     }
   ];
 
