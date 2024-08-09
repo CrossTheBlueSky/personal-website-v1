@@ -1,30 +1,51 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './App.css';
+import ThemeToggle from './components/ThemeToggle';
 import Header from './components/Header';
-import Home from './routes/Home';
-import About from './routes/About';
-import Projects from './routes/Projects';
-import Contact from './routes/Contact';
-import Footer from './components/Footer';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    document.body.classList.toggle('dark-mode', darkMode);
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <main className="container mt-4">
-          <Routes>
-            <Route path="/modern" element={<Home />} />
-            <Route path="/modern/about" element={<About />} />
-            <Route path="/modern/projects" element={<Projects />} />
-            <Route path="/modern/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+  <div className={`app ${darkMode ? 'dark-mode' : ''}`}>
+    <div className="App">
+    <Container>
+    <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Header />
+      <main>
+        <Hero />
+        <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+      </Container>
+    </div>
+
+    </div>
   );
 }
 
