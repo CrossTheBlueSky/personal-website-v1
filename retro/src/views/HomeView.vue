@@ -10,7 +10,7 @@
         <RouterLink to="/contact">I want to reach out</RouterLink>
       </nav>
       <div class="image-container">
-        <img src="/src/assets/pixel-dragon.jfif" alt="Responsive Image">
+        <img src="/src/assets/pixel-avatar.png" alt="retro-pixel-avatar-of-derek-mercedes">
       </div>
     </div>
   </div>
