@@ -15,12 +15,12 @@ import {projectCard} from '../components/ProjectCard.vue'
             <a href="#">View Project</a>
         </div>
         <div class="project-screenshot">
-            <img src="/src/assets/pixel-dragon.jfif" alt="pixel-dragon-image">
+            <img src="../assets/buildin.png" alt="pixel-derek-in-armor-image">
         </div>
     </div>
     <div class="project-card">
       <div class="project-screenshot">
-            <img src="/src/assets/milestone-splash-1.png" alt="mountaintop-image">
+            <img src="../assets/runnin.png" alt="pixel-derek-running-image">
         </div>
         <div class="project-info">
           <h2>Milestone Fitness</h2>
@@ -43,7 +43,7 @@ import {projectCard} from '../components/ProjectCard.vue'
         <a href="#">View Project</a>
         </div>
         <div class="project-screenshot">
-            <img src="/src/assets/ebb-placeholder.jpeg" alt="flowing-water-image">
+            <img src="../assets/floatin.png" alt="pixel-derek-floating-on-river">
         </div>
     </div>
   </div>
