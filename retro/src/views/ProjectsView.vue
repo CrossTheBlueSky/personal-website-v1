@@ -12,7 +12,7 @@ import {projectCard} from '../components/ProjectCard.vue'
         <br>
         <h5>Stack:</h5>
         <p>React, Redux, Node, Express, MongoDB, MantineUI</p>
-            <a href="#">View Project</a>
+            <a href="https://github.com/CrossTheBlueSky/DnD-Nearby-5e-Character-Builder">View Project</a>
         </div>
         <div class="project-screenshot">
             <img src="../assets/buildin.png" alt="pixel-derek-in-armor-image">
@@ -29,7 +29,7 @@ import {projectCard} from '../components/ProjectCard.vue'
         <br>
         <h5>Stack:</h5>
         <p>React, Python, SQLAlchemy, Flask, Bootstrap</p>
-        <a href="#">View Project</a>
+        <a href="https://github.com/CrossTheBlueSky/Milestone-Fitness-App">View Project</a>
         </div>
     </div>
     <div class="project-card">
@@ -40,7 +40,7 @@ import {projectCard} from '../components/ProjectCard.vue'
         <br>
         <h5>Stack:</h5>
         <p>React, Python, SQLAlchemy, Flask, TailwindCSS, ChartJS</p>
-        <a href="#">View Project</a>
+        <a href="https://github.com/CrossTheBlueSky/Ebb---Mood-Tracking-and-Journaling">View Project</a>
         </div>
         <div class="project-screenshot">
             <img src="../assets/floatin.png" alt="pixel-derek-floating-on-river">
