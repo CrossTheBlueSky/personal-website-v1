@@ -7,7 +7,7 @@
       <nav class="nav">
         <RouterLink to="/projects">What kind of things?</RouterLink>
         <RouterLink to="/about">Who are you, exactly?</RouterLink>
-        <RouterLink to="/contact">I want to reach out</RouterLink>
+        <RouterLink to="/contact">How can I reach you?</RouterLink>
       </nav>
       <div class="image-container">
         <img src="/src/assets/pixel-avatar.png" alt="retro-pixel-avatar-of-derek-mercedes">
