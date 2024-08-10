@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import derekImage from '/derek.png';
 
 function About() {
   return (
@@ -11,13 +12,14 @@ function About() {
       </Row>
       <Row className="align-items-center">
         <Col xs={12} md={4} className="mb-4 mb-md-0">
+        <div className="circular-image-container mb-4">
           <Image 
-            src="https://via.placeholder.com/300" 
-            fluid 
+            src={derekImage}
             rounded 
             alt="Derek Mercedes"
-            className="d-block mx-auto"
+            className="mx-auto circular-image"
           />
+          </div>
         </Col>
         <Col xs={12} md={8} className="text-start">
           <p>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Modal } from 'react-bootstrap';
 import ProjectCard from '../components/ProjectCard';
+import nearbyImage from '/nearby-screenshot.png'
+
 
 function Projects() {
   const [show, setShow] = useState(false);
@@ -16,30 +18,30 @@ function Projects() {
     {
       id: 1,
       name: "D&D Nearby",
-      image: "https://via.placeholder.com/300x200",
+      image: "modern/src/assets/pixel-dragon.jfif",
       technologies: ["React", "Redux", "Node.js", "MongoDB", "MantineUI"],
       description: "An App I made to streamline the creation of characters for 5e Dungeons and Dragons.",
-      modalImage: "",
+      modalImage: "modern/src/assets/nearby-screenshot.png",
       github: "https://github.com/CrossTheBlueSky/DnD-Nearby-5e-Character-Builder",
       demo: "#"
     },
     {
       id: 2,
       name: "Milestone Fitness",
-      image: "https://via.placeholder.com/300x200",
+      image: "modern/src/assets/milestone-splash-1.png",
       technologies: ["React", "Python", "SQLAlchemy", "Flask", "Bootstrap"],
       description: " A fitness app that utilizes machine learning to break down large fitness goals into smaller steps.",
-      modalImage: "",
+      modalImage: "modern/src/assets/milestone-screenshot.png",
       github: "https://github.com/CrossTheBlueSky/Milestone-Fitness-App",
       demo: "#"
     },
     {
       id: 3,
       name: "Ebb - A Journaling App",
-      image: "https://via.placeholder.com/300x200",
+      image: "modern/src/assets/ebb-placeholder.jpeg",
       technologies: ["React", "Python", "TailwindCSS", "ChartJS", "PostgreSQL"],
       description: " A journaling app that tracks and visualizes your mood patterns over time",
-      modalImage: "",
+      modalImage: "modern/src/assets/ebb-screenshot.png",
       github: "https://github.com/CrossTheBlueSky/Ebb---Mood-Tracking-and-Journaling",
       demo: "#"
     }

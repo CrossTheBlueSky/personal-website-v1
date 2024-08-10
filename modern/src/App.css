@@ -4,6 +4,7 @@ html {
   font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
+
 :root {
   --color-bg-primary: #f0f4f8;
   --color-bg-secondary: #ffffff;
@@ -39,6 +40,21 @@ body {
   color: var(--color-text-primary);
   transition: background-color 0.3s, color 0.3s;
 }
+
+.header {
+  background-color: var(--color-bg-primary);
+
+}
+
+
+.header a{
+  color: var(--color-text-primary);
+}
+
+.header a:hover{
+  color: var(--color-accent-secondary);
+}
+
 
 a {
   color: var(--color-accent);
@@ -80,8 +96,8 @@ button:hover, .btn:hover {
 }
 
 .circular-image-container {
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
   margin: 0 auto;
   border: 3px solid;
   border-color: var(--color-border);

@@ -25,7 +25,7 @@ function App() {
   <div className={`app ${darkMode ? 'dark-mode' : ''}`}>
     <div className="App">
     <Container>
-    <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+    <ThemeToggle sticky="top" darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Header />
       <main>
         <Hero />
