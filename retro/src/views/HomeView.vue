@@ -1,14 +1,16 @@
 <template>
   <div class="container-wrapper">
   <div class="container">
+    <div class="home-intro">
     <h1>Hi there! I'm Derek.</h1>
     <p>I make things for computers.</p>
+    </div>
     <div class="content">
       <nav class="nav">
         <RouterLink to="/projects">What kind of things?</RouterLink>
         <RouterLink to="/about">Who are you, exactly?</RouterLink>
         <RouterLink to="/contact">How can I reach you?</RouterLink>
-        <a href="../modern">Do you have a more modern website?</a>
+        <a href="www.derekmercedes.com/modern">Can I get a modern layout?</a>
       </nav>
       <div class="image-container">
         <img src="/src/assets/pixel-avatar.png" alt="retro-pixel-avatar-of-derek-mercedes">
@@ -27,9 +29,14 @@
   width: 53vw;
   height: 58vh;
 }
+
+.home-intro{
+  color: rgb(191, 76, 253);
+}
 .container {
   display: flex;
   flex-direction: column;
+  gap: 5px;
   height:100%;
   align-items: center;
   font-size: 1.2rem
@@ -63,8 +70,8 @@
 }
 
 .image-container img {
-  max-width: 60%;
-  max-height: 60%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
 </style>

@@ -62,6 +62,7 @@ import {projectCard} from '../components/ProjectCard.vue'
   flex-direction: column;
   width: 53vw;
   height: 58vh;
+  color: rgb(191, 76, 253);
 }
 
 .project-container{
