@@ -10,7 +10,7 @@
         <RouterLink to="/projects">What kind of things?</RouterLink>
         <RouterLink to="/about">Who are you, exactly?</RouterLink>
         <RouterLink to="/contact">How can I reach you?</RouterLink>
-        <a href="www.derekmercedes.com/modern">Can I get a modern layout?</a>
+        <a href="https://derekmercedes.com/modern">Can I get a modern layout?</a>
       </nav>
       <div class="image-container">
         <img src="/src/assets/pixel-avatar.png" alt="retro-pixel-avatar-of-derek-mercedes">
