@@ -18,7 +18,7 @@ function Projects() {
     {
       id: 1,
       name: "D&D Nearby",
-      image: "modern/src/assets/nearby-placeholder-2.webp",
+      image: "/nearby-placeholder-2.webp",
       technologies: ["React", "Redux", "Node.js", "MongoDB", "MantineUI"],
       description: "An App I made to streamline the creation of characters for 5e Dungeons and Dragons.",
       modalImage: "modern/src/assets/nearby-screenshot.png",
