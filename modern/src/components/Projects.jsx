@@ -18,7 +18,7 @@ function Projects() {
     {
       id: 1,
       name: "D&D Nearby",
-      image: "/nearby-placeholder-2.webp",
+      image: "modern/nearby-placeholder-2.webp",
       technologies: ["React", "Redux", "Node.js", "MongoDB", "MantineUI"],
       description: "An App I made to streamline the creation of characters for 5e Dungeons and Dragons.",
       modalImage: "modern/src/assets/nearby-screenshot.png",
@@ -28,7 +28,7 @@ function Projects() {
     {
       id: 2,
       name: "Milestone Fitness",
-      image: "modern/src/assets/milestone-splash-1.png",
+      image: "modern/milestone-splash-1.png",
       technologies: ["React", "Python", "SQLAlchemy", "Flask", "Bootstrap"],
       description: " A fitness app that utilizes machine learning to break down large fitness goals into smaller steps.",
       modalImage: "modern/src/assets/milestone-screenshot.png",
@@ -38,7 +38,7 @@ function Projects() {
     {
       id: 3,
       name: "Ebb - A Journaling App",
-      image: "modern/src/assets/ebb-placeholder.jpeg",
+      image: "modern/ebb-placeholder.jpeg",
       technologies: ["React", "Python", "TailwindCSS", "ChartJS", "PostgreSQL"],
       description: " A journaling app that tracks and visualizes your mood patterns over time",
       modalImage: "modern/src/assets/ebb-screenshot.png",

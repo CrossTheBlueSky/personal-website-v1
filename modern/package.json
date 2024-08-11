@@ -1,6 +1,7 @@
 {
   "name": "modern",
   "private": true,
+  "homepage": "/modern",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
