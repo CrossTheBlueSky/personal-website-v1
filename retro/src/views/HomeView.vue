@@ -8,6 +8,7 @@
         <RouterLink to="/projects">What kind of things?</RouterLink>
         <RouterLink to="/about">Who are you, exactly?</RouterLink>
         <RouterLink to="/contact">How can I reach you?</RouterLink>
+        <a href="../modern">Do you have a more modern website?</a>
       </nav>
       <div class="image-container">
         <img src="/src/assets/pixel-avatar.png" alt="retro-pixel-avatar-of-derek-mercedes">
