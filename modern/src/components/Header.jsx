@@ -6,7 +6,7 @@ function Header() {
     <Navbar className="header p-0" data-bg-color="dark" expand="lg" sticky="top">
       <Container className="p-0 fs-5">
         {/* <Navbar.Brand href="#home">Derek Mercedes</Navbar.Brand> */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle className="burger" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
             <Nav.Link href="#about">About</Nav.Link>

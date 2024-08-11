@@ -4,11 +4,11 @@ import heroImage from '/derek.png';
 
 const Hero = () => {
   return (
-    <section className="hero py-5">
+    <section className="hero py-0">
       <Container>
         <Row className="justify-content-center align-items-center text-center">
           <Col md={8}>
-            <h1 className="display-4 mt-4">I'm Derek Mercedes</h1>
+            <h1 className="display-4 mt-4">My name is Derek.</h1>
             {/* <div className="circular-image-container mb-4">
               <img 
                 src={heroImage}
@@ -16,7 +16,7 @@ const Hero = () => {
                 className="img-fluid circular-image"
               />
             </div> */}
-            <h2 className="h3 mb-2">I make things for computers.</h2>
+            <h2 className="h3 mb-4">I make things for computers.</h2>
           </Col>
         </Row>
       </Container>

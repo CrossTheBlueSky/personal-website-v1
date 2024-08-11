@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card} from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 
 function ProjectCard({ project, onLearnMore }) {
   return (
@@ -10,9 +10,9 @@ function ProjectCard({ project, onLearnMore }) {
         <Card.Text className="flex-grow-1">
           {project.technologies.join(", ")}
         </Card.Text>
-        <a href={project.github} className="button btn" variant="primary" onClick={() => onLearnMore(project)}>
-          View on Github
-        </a>
+        <Button variant="primary" onClick={() => onLearnMore(project)}>
+          Learn More
+        </Button>
       </Card.Body>
     </Card>
   );

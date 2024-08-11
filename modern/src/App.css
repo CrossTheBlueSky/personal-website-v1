@@ -6,13 +6,14 @@ html {
 
 
 :root {
-  --color-bg-primary: #f0f4f8;
-  --color-bg-secondary: #ffffff;
+  --color-bg-frame: #f0f4f8;
+  --color-bg-primary: #ede9cf;
+  --color-bg-secondary: #f1d9b5;
   --color-text-primary: #1a202c;
   --color-text-secondary: #4a5568;
-  --color-accent-primary: #4299e1;   /* Blue */
-  --color-accent-secondary: #48bb78; /* Green */
-  --color-accent-tertiary: #ed8936;  /* Orange */
+  --color-accent-primary: #4299e1;   
+  --color-accent-secondary: #48bb78; 
+  --color-accent-tertiary: #ed8936;  
   --color-border: #e2e8f0;
   --color-card-bg: #ffffff;
   --color-success: #48bb78;
@@ -24,11 +25,11 @@ html {
 }
 
 body.dark-mode {
-  --color-bg-primary: #1a202c;
-  --color-bg-secondary: #2d3748;
+  --color-bg-primary: #021526;
+  --color-bg-secondary: #283448;
   --color-text-primary: #f7fafc;
   --color-text-secondary: #a0aec0;
-  --color-accent-primary: #63b3ed;
+  --color-accent-primary: #269bee;
   --color-accent-secondary: #68d391;
   --color-accent-tertiary: #fbd38d;
   --color-border: #4a5568;
@@ -45,14 +46,16 @@ body {
   background-color: var(--color-bg-primary);
 
 }
-
+.burger{
+  background-color: var(--color-card-bg);
+}
 
 .header a{
   color: var(--color-text-primary);
 }
 
 .header a:hover{
-  color: var(--color-accent-secondary);
+  color: var(--color-accent-primary);
 }
 
 
@@ -66,16 +69,16 @@ a:hover {
 }
 
 button, .btn {
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-primary);
   color: var(--color-bg-primary);
+  padding: 20px 20px;
   border: none;
-  padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 button:hover, .btn:hover {
-  background-color: var(--color-text-secondary);
+  background-color: var(--color-accent-secondary);
 }
 
 #root {
@@ -125,6 +128,11 @@ button:hover, .btn:hover {
 .hero h2 {
   color: var(--color-text-secondary);
   margin-bottom: 30px;
+}
+
+.project-card{
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary)
 }
 
 @media (max-width: 767px) {
