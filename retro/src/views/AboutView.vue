@@ -52,6 +52,7 @@
 .about-text{
   flex: 1;
   padding: 20px;
+  color: rgb(191, 76, 253);
 }
 
 .about-image {
