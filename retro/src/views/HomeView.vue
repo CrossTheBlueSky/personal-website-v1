@@ -1,58 +1,55 @@
 <template>
   <div class="container-wrapper">
-  <div class="container">
-    <div class="home-intro">
-    <h1>Hi there! I'm Derek.</h1>
-    <p>I make things for computers.</p>
-    </div>
-    <div class="content">
+    <div class="container">
+      <div class="image-container">
+        <img src="/src/assets/pixel-avatar.png" alt="retro-pixel-avatar-of-derek-mercedes">
+      </div>
+      <div class="home-intro">
+        <h1>Hi there! I'm Derek.</h1>
+        <p>I make things for computers.</p>
+      </div>
       <nav class="nav">
         <RouterLink to="/projects">What kind of things?</RouterLink>
         <RouterLink to="/about">Who are you, exactly?</RouterLink>
         <RouterLink to="/contact">How can I reach you?</RouterLink>
         <a href="https://derekmercedes.com/modern">Can I get a modern layout?</a>
       </nav>
-      <div class="image-container">
-        <img src="/src/assets/pixel-avatar.png" alt="retro-pixel-avatar-of-derek-mercedes">
-      </div>
     </div>
-  </div>
   </div>
 </template>
 
-
 <style scoped>
 .container-wrapper {
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  width: 53vw;
-  height: 58vh;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow-x: hidden;
 }
 
-.home-intro{
-  color: rgb(191, 76, 253);
-}
 .container {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  height:100%;
+  gap: 1rem;
   align-items: center;
-  font-size: 1.2rem
+  justify-content: center;
+  font-size: 1.2rem;
+  max-width: 100%;
 }
 
-.content {
-  margin-top: 1rem;
-  width:100%;
-  display: flex;
-  flex: 1;
+.home-intro {
+  color: rgb(191, 76, 253);
+  text-align: center;
 }
 
 .nav {
   display: flex;
-  margin-left: 10rem;
   flex-direction: column;
+  width: 100%;
+  max-height: 40vh;
+  overflow-y: auto;
+  justify-self: center;
+  align-items: center;
 }
 
 .nav a {
@@ -61,17 +58,82 @@
 }
 
 .image-container {
-  flex: 1;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: start;
-  margin-right: 5rem;
-
 }
 
 .image-container img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
   object-fit: cover;
+}
+
+/* Tablet and small desktop styles */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .home-intro {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin-right: 2.5rem;
+  }
+
+  .nav {
+    order: 2;
+    width: 20%;
+    max-height: none;
+    overflow-y: visible;
+    margin-left: 10rem;
+  }
+
+  .image-container {
+    order: 3;
+    width: 35%;
+    margin-right: 5rem;
+  }
+}
+
+/* Large desktop styles */
+@media screen and (min-width: 1200px) {
+  .container-wrapper {
+    max-width: 53vw;
+  }
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+    height: 58vh;
+  }
+
+  .home-intro {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav {
+    order: 2;
+    width: auto;
+    margin-left: 10rem;
+    margin-right: 1rem;
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .image-container {
+    order: 3;
+    flex: 1;
+    margin-right: 5rem;
+  }
 }
 </style>
