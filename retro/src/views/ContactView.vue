@@ -8,12 +8,12 @@
         <img src="/src/assets/gmail.svg" alt="gmail" width="50px" height="50px">
       <a href="mailto:mercedes.derek@gmail.com">Email</a>
       </div>
-      <div class="contact-row">
+      <div style="margin-left: 1rem" class="contact-row">
         <img src="/src/assets/linkedin-blue-svgrepo-com.svg" alt="linkedin" width="50px" height="50px">
       <a icon="" href="https://www.linkedin.com/in/derek-mercedes">Linkedin</a>
     </div>
     <div class="contact-row">
-      <img src="/src/assets/github-outline-svgrepo-com.svg" alt="github" width="50px" height="50px">
+      <img src="/src/assets/github-color-svgrepo-com.svg" alt="github" width="45px" height="45px">
       <a icon="github" href="https://github.com/crossthebluesky">Github</a>
   </div>
     <div class="contact-row">
