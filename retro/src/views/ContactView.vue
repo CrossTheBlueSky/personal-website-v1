@@ -9,11 +9,11 @@
       <a href="mailto:mercedes.derek@gmail.com">Email</a>
       </div>
       <div class="contact-row">
-        <img src="/src/assets/linkedin.svg" alt="linkedin" width="50px" height="50px">
+        <img src="/src/assets/linkedin-blue-svgrepo-com.svg" alt="linkedin" width="50px" height="50px">
       <a icon="" href="https://www.linkedin.com/in/derek-mercedes">Linkedin</a>
     </div>
     <div class="contact-row">
-      <img src="/src/assets/github.svg" alt="github" width="50px" height="50px">
+      <img src="/src/assets/github-outline-svgrepo-com.svg" alt="github" width="50px" height="50px">
       <a icon="github" href="https://github.com/crossthebluesky">Github</a>
   </div>
     <div class="contact-row">
