@@ -15,7 +15,7 @@
     </p>
     </div>
   <div class="about-image">
-    <img src="/src/assets/derek.png" alt="derek-mercedes" />
+    <img src="/src/assets/new_site_photo.png" alt="derek-mercedes" />
   </div>
 </div>
 </div>

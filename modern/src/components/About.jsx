@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import derekImage from '/derek.png';
+import derekImage from '/new_site_photo.png';
 
 function About() {
   return (
