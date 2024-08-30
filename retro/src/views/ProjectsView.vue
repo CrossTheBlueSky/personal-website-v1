@@ -6,6 +6,20 @@ import {projectCard} from '../components/ProjectCard.vue'
   <div class="project-container">
     <div class="project-card">
         <div class="project-info">
+          <h2>Ebb - A Journaling App </h2>
+        <h4><em> Find your flow </em></h4>
+        <p> A journaling app that tracks and visualizes your mood patterns over time</p>
+        <br>
+        <h5>Stack:</h5>
+        <p>TypeScript, React, Python, PostgreSQL, Flask, TailwindCSS, ChartJS</p>
+        <a href="https://github.com/CrossTheBlueSky/ebb-journaling-v2">View Project</a>
+        </div>
+        <div class="project-screenshot">
+            <img src="../assets/floatin.png" alt="pixel-derek-floating-on-river">
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-info">
           <h2>D&D Nearby</h2>
         <h4><em>Because sometimes beyond is too far</em></h4>
         <p>An App I made to streamline the creation of characters for 5e Dungeons and Dragons.</p>
@@ -30,20 +44,6 @@ import {projectCard} from '../components/ProjectCard.vue'
         <h5>Stack:</h5>
         <p>React, Python, SQLAlchemy, Flask, Bootstrap</p>
         <a href="https://github.com/CrossTheBlueSky/Milestone-Fitness-App">View Project</a>
-        </div>
-    </div>
-    <div class="project-card">
-        <div class="project-info">
-          <h2>Ebb - A Journaling App </h2>
-        <h4><em> Find your flow </em></h4>
-        <p> A journaling app that tracks and visualizes your mood patterns over time</p>
-        <br>
-        <h5>Stack:</h5>
-        <p>React, Python, SQLAlchemy, Flask, TailwindCSS, ChartJS</p>
-        <a href="https://github.com/CrossTheBlueSky/Ebb---Mood-Tracking-and-Journaling">View Project</a>
-        </div>
-        <div class="project-screenshot">
-            <img src="../assets/floatin.png" alt="pixel-derek-floating-on-river">
         </div>
     </div>
   </div>

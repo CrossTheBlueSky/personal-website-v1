@@ -17,6 +17,16 @@ function Projects() {
   const projects = [
     {
       id: 1,
+      name: "Ebb - A Journaling App",
+      image: "modern/ebb-placeholder.jpeg",
+      technologies: ["TypeScript", "React", "Python", "TailwindCSS", "ChartJS", "PostgreSQL"],
+      description: " A journaling app that tracks and visualizes your mood patterns over time",
+      modalImage: "modern/src/assets/ebb-screenshot.png",
+      github: "https://github.com/CrossTheBlueSky/ebb-journaling-v2",
+      demo: "#"
+    },
+    {
+      id: 2,
       name: "D&D Nearby",
       image: "modern/nearby-placeholder-2.webp",
       technologies: ["React", "Redux", "Node.js", "MongoDB", "MantineUI"],
@@ -26,7 +36,7 @@ function Projects() {
       demo: "#"
     },
     {
-      id: 2,
+      id: 3,
       name: "Milestone Fitness",
       image: "modern/milestone-splash-1.png",
       technologies: ["React", "Python", "SQLAlchemy", "Flask", "Bootstrap"],
@@ -35,16 +45,7 @@ function Projects() {
       github: "https://github.com/CrossTheBlueSky/Milestone-Fitness-App",
       demo: "#"
     },
-    {
-      id: 3,
-      name: "Ebb - A Journaling App",
-      image: "modern/ebb-placeholder.jpeg",
-      technologies: ["React", "Python", "TailwindCSS", "ChartJS", "PostgreSQL"],
-      description: " A journaling app that tracks and visualizes your mood patterns over time",
-      modalImage: "modern/src/assets/ebb-screenshot.png",
-      github: "https://github.com/CrossTheBlueSky/Ebb---Mood-Tracking-and-Journaling",
-      demo: "#"
-    }
+
   ];
 
   return (
