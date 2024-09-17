@@ -1,8 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
-import ProjectsView from '../views/ProjectsView.vue'
-import ContactView from '../views/ContactView.vue'
+
 
 
 const router = createRouter({
@@ -28,7 +26,17 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue')
-    }
+    },
+    {
+      path: '/resume',
+      name: 'resume',
+      redirect: to =>{
+        window.open('/src/assets/resume.pdf', '_blank');
+        return '/'
+      }
+    },
+      
+    
   ]
 })
 

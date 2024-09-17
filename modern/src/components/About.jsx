@@ -11,7 +11,7 @@ function About() {
         </Col>
       </Row>
       <Row className="align-items-center">
-        <Col xs={12} md={4} className="mb-4 mb-md-0">
+        <Col xs={12} sm={12} md={4} lg={4} className="mb-4 mb-md-0">
         <div className="circular-image-container mb-4">
           <Image 
             src={derekImage}
@@ -21,7 +21,9 @@ function About() {
           />
           </div>
         </Col>
-        <Col xs={12} md={8} className="text-start">
+        <Col xs={0} sm={0} md={0} lg={0}>
+        </Col>
+        <Col xs={12} sm={12} md={5} lg={7}className="text-start">
           <p>
             Hey there! I'm Derek Mercedes, a Full Stack Software Developer based in Denver, Colorado. 
             My journey into tech has been a bit of an adventure - from crafting AI for video games at Full Sail University to managing teams in the hospitality industry, and finally finding my true calling in web development.

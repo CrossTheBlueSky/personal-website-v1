@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import myResume from '/resume.pdf';
 
 function Header() {
   return (
@@ -13,6 +14,13 @@ function Header() {
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link 
+              href={myResume}
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Resume
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

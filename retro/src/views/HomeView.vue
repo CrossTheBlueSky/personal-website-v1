@@ -5,14 +5,15 @@
         <img src="/src/assets/pixel-avatar.png" alt="retro-pixel-avatar-of-derek-mercedes">
       </div>
       <div class="home-intro">
-        <h1>Hi there! I'm Derek.</h1>
-        <p>I make things for computers.</p>
+        <h1>Hi there! I'm Derek</h1>
+        <p>I build apps that make life easier and make people more productive</p>
       </div>
       <nav class="nav">
-        <RouterLink to="/projects">What kind of things?</RouterLink>
-        <RouterLink to="/about">Who are you, exactly?</RouterLink>
-        <RouterLink to="/contact">How can I reach you?</RouterLink>
-        <a href="https://derekmercedes.com/modern">Can I get a modern layout?</a>
+        <RouterLink to="/projects">My Projects</RouterLink>
+        <RouterLink to="/about">About Me</RouterLink>
+        <RouterLink to="/contact">Contact Me</RouterLink>
+        <a href="/resume" target="_blank">My Resume</a>
+        <a href="https://derekmercedes.com/modern">Modern Layout</a>
       </nav>
     </div>
   </div>
