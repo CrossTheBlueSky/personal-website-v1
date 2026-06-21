@@ -9,17 +9,17 @@ function Footer() {
       <Container>
         <Row className="justify-content-center">
           <Col xs="auto">
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-dark mx-2">
+            <a href="https://www.linkedin.com/in/derek-mercedes" target="_blank" rel="noopener noreferrer" className="text-dark mx-2">
               <FaLinkedin size={24} />
             </a>
           </Col>
           <Col xs="auto">
-            <a href="https://dev.to/yourusername" target="_blank" rel="noopener noreferrer" className="text-dark mx-2">
+            <a href="https://dev.to/crossthebluesky" target="_blank" rel="noopener noreferrer" className="text-dark mx-2">
               <SiDevdotto size={24} />
             </a>
           </Col>
           <Col xs="auto">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-dark mx-2">
+            <a href="https://github.com/crossthebluesky" target="_blank" rel="noopener noreferrer" className="text-dark mx-2">
               <FaGithub size={24} />
             </a>
           </Col>

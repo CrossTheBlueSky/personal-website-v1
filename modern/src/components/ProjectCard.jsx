@@ -11,7 +11,7 @@ function ProjectCard({ project, onLearnMore }) {
           {project.technologies.join(", ")}
         </Card.Text>
         <a href={project.github} className="button btn" variant="primary" onClick={() => onLearnMore(project)}>
-          View on Github
+          View on GitHub
         </a>
       </Card.Body>
     </Card>

@@ -6,13 +6,13 @@ import {projectCard} from '../components/ProjectCard.vue'
   <div class="project-container">
     <div class="project-card">
         <div class="project-info">
-          <h2>Ebb - A Journaling App </h2>
-        <h4><em> Find your flow </em></h4>
-        <p> A journaling app that tracks and visualizes your mood patterns over time</p>
+          <h2>Ebb — Mental State Journal</h2>
+        <h4><em>Find your flow</em></h4>
+        <p>A journaling app that lets you color-code your moods and chart mood trends over time.</p>
         <br>
         <h5>Stack:</h5>
         <p>TypeScript, React, Python, PostgreSQL, Flask, TailwindCSS, ChartJS</p>
-        <a href="https://github.com/CrossTheBlueSky/ebb-journaling-v2">View Project</a>
+        <a href="https://github.com/crossthebluesky/ebb-journaling-v2">View on GitHub</a>
         </div>
         <div class="project-screenshot">
             <img src="../assets/floatin.png" alt="pixel-derek-floating-on-river">
@@ -20,13 +20,13 @@ import {projectCard} from '../components/ProjectCard.vue'
     </div>
     <div class="project-card">
         <div class="project-info">
-          <h2>D&D Nearby</h2>
+          <h2>D&D Nearby: 5e Character Builder</h2>
         <h4><em>Because sometimes beyond is too far</em></h4>
-        <p>An App I made to streamline the creation of characters for 5e Dungeons and Dragons.</p>
+        <p>Streamlines the process and automates the math required to build a character for D&D 5th Edition.</p>
         <br>
         <h5>Stack:</h5>
         <p>React, Redux, Node, Express, MongoDB, MantineUI</p>
-            <a href="https://github.com/CrossTheBlueSky/DnD-Nearby-5e-Character-Builder">View Project</a>
+            <a href="https://github.com/crossthebluesky/DnD-Nearby-5e-Character-Builder">View on GitHub</a>
         </div>
         <div class="project-screenshot">
             <img src="../assets/buildin.png" alt="pixel-derek-in-armor-image">
@@ -39,11 +39,11 @@ import {projectCard} from '../components/ProjectCard.vue'
         <div class="project-info">
           <h2>Milestone Fitness</h2>
         <h4><em>Every step is a goal achieved.</em></h4>
-        <p> A fitness app that utilizes machine learning to break down large fitness goals into smaller steps.</p>
+        <p>A fitness app that uses machine learning to break large performance goals into smaller, achievable steps.</p>
         <br>
         <h5>Stack:</h5>
         <p>React, Python, SQLAlchemy, Flask, Bootstrap</p>
-        <a href="https://github.com/CrossTheBlueSky/Milestone-Fitness-App">View Project</a>
+        <a href="https://github.com/crossthebluesky/Milestone-Fitness-App">View on GitHub</a>
         </div>
     </div>
   </div>
