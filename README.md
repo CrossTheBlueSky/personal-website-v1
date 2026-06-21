@@ -7,7 +7,7 @@ Welcome to the repository for my personal portfolio website. This site showcases
 The portfolio includes two versions:
 
 1. **Vue.js Version**: A retro CRT-monitor layout with a nostalgic feel.
-2. **React Version**: A modern, responsive layout built with Bootstrap.
+2. **Modern Version**: A Resumx-built resume site served at `/modern`, generated from `rmx-resume/`.
 
 ## Live Site
 
@@ -15,8 +15,8 @@ You can view the portfolio at [https://www.derekmercedes.com](https://www.derekm
 
 ## Technologies Used
 
-- Vue.js
-- React with Bootstrap
+- Vue.js (retro layout)
+- Resumx (modern resume site)
 - Vercel for deployment
 
 ## Connect

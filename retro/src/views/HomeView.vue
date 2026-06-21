@@ -13,7 +13,7 @@
         <RouterLink to="/about">About Me</RouterLink>
         <RouterLink to="/contact">Contact Me</RouterLink>
         <a href="/retro/resume.pdf" target="_blank" rel="noopener noreferrer">My Resume</a>
-        <a href="https://derekmercedes.com/modern">Modern Layout</a>
+        <a href="https://derekmercedes.com/modern" target="_blank" rel="noopener noreferrer">Modern Layout</a>
       </nav>
     </div>
   </div>
