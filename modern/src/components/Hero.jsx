@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import heroImage from '/derek.png';
 
 const Hero = () => {
   return (
@@ -8,15 +7,12 @@ const Hero = () => {
       <Container>
         <Row className="justify-content-center align-items-center text-center">
           <Col md={8}>
-            <h1 className="display-4 mt-4">My name is Derek.</h1>
-            {/* <div className="circular-image-container mb-4">
-              <img 
-                src={heroImage}
-                alt="Derek Mercedes" 
-                className="img-fluid circular-image"
-              />
-            </div> */}
-            <h2 className="h3 mb-4">I make things for computers.</h2>
+            <h1 className="display-4 mt-4">Derek Mercedes</h1>
+            <h2 className="h3 mb-2">Full-Stack Software Engineer</h2>
+            <p className="lead mb-4">
+              AWS-certified developer building responsive web applications, RESTful APIs,
+              and cloud-native solutions with JavaScript, TypeScript, React, and Python.
+            </p>
           </Col>
         </Row>
       </Container>

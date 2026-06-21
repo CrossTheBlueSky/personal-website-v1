@@ -6,12 +6,16 @@
     <div class="about-text">
     <h1>About Me</h1>
     <p>
-    Hey there! I'm Derek Mercedes, a Full Stack Developer based in Denver, Colorado. 
-    My journey into tech has been a bit of an adventure - from crafting AI for video games at Full Sail University to managing teams in the hospitality industry, and finally finding my true calling in web development. 
-    When I'm not coding, you'll find me doing circus acrobatics, playing video and tabletop games, and spending time with my dog.
-    I believe in the power of technology to solve real-world problems and make life a little more fun along the way. If it can make a difference, I'm all in! 
-    So if you're looking for someone who combines technical know-how with creativity and a love for other humans, you're in the right place. 
-    Let's create something awesome together!
+    I'm an AWS-Certified Full-Stack Software Engineer based in Denver, Colorado.
+    I build responsive web applications and RESTful APIs with microservices and cloud
+    technologies, with a strong background in management and customer-facing work.
+    My path into software spans game-development AI at Full Sail University, IT support
+    at scale, and freelance full-stack delivery for clients who need reliable APIs,
+    e-commerce storefronts, and cloud migrations.
+    I care about maintainable code, clear documentation, and shipping work that holds up
+    after handoff.
+    Credentials: AWS Certified Developer, Full-Stack Software Engineering (Flatiron School),
+    B.S. Computer Science — Game Development (Full Sail University).
     </p>
     </div>
   <div class="about-image">

@@ -10,15 +10,15 @@
       </div>
       <div style="margin-left: 1rem" class="contact-row">
         <img src="/src/assets/linkedin-blue-svgrepo-com.svg" alt="linkedin" width="50px" height="50px">
-      <a icon="" href="https://www.linkedin.com/in/derek-mercedes">Linkedin</a>
+      <a href="https://www.linkedin.com/in/derek-mercedes" target="_blank" rel="noopener noreferrer">Linkedin</a>
     </div>
     <div class="contact-row">
       <img src="/src/assets/github-color-svgrepo-com.svg" alt="github" width="45px" height="45px">
-      <a icon="github" href="https://github.com/crossthebluesky">Github</a>
+      <a href="https://github.com/crossthebluesky" target="_blank" rel="noopener noreferrer">Github</a>
   </div>
     <div class="contact-row">
       <img src="/src/assets/dev.to.svg" alt="dev.to" width="50px" height="50px">
-      <a icon="dev" href="https://dev.to/crossthebluesky">Dev.to</a>
+      <a href="https://dev.to/crossthebluesky" target="_blank" rel="noopener noreferrer">Dev.to</a>
     </div>
     </div>
   </div>

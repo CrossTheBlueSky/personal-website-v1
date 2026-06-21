@@ -1,27 +1,27 @@
 # Derek Mercedes - Software Development Portfolio
 
-Welcome to the repository of my personal portfolio website. This site showcases my software development projects and skills.
+Welcome to the repository for my personal portfolio website. This site showcases selected software projects, technical skills, and professional background.
 
 ## Overview
 
-My portfolio website features two distinct versions:
+The portfolio includes two versions:
 
-1. **Vue.js Version**: This version is designed to emulate the appearance of an old-school CRT monitor, providing a unique and nostalgic user experience.
-
-2. **React Version**: This version offers a more modern and traditional design, showcasing my projects in a contemporary layout.
+1. **Vue.js Version**: A retro CRT-monitor layout with a nostalgic feel.
+2. **React Version**: A modern, responsive layout built with Bootstrap.
 
 ## Live Site
 
-You can view my portfolio live at: [https://www.derekmercedes.com](https://www.derekmercedes.com)
+You can view the portfolio at [https://www.derekmercedes.com](https://www.derekmercedes.com).
 
 ## Technologies Used
 
-- Vue.js (with TailwindCSS for styling)
-- React (with Bootstrap for styling)
+- Vue.js
+- React with Bootstrap
+- Vercel for deployment
 
-## Connect With Me
+## Connect
 
+- Email: [mercedes.derek@gmail.com](mailto:mercedes.derek@gmail.com)
 - LinkedIn: [https://www.linkedin.com/in/derek-mercedes](https://www.linkedin.com/in/derek-mercedes)
-- Blog: [https://www.dev.to/crossthebluesky](https://www.dev.to/crossthebluesky)
-
-Feel free to explore my projects and get in touch through the provided social links!
+- GitHub: [https://github.com/crossthebluesky](https://github.com/crossthebluesky)
+- Blog: [https://dev.to/crossthebluesky](https://dev.to/crossthebluesky)

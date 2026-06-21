@@ -10,9 +10,23 @@ function ProjectCard({ project, onLearnMore }) {
         <Card.Text className="flex-grow-1">
           {project.technologies.join(", ")}
         </Card.Text>
-        <a href={project.github} className="button btn" variant="primary" onClick={() => onLearnMore(project)}>
-          View on Github
-        </a>
+        {project.github ? (
+          <a
+            href={project.github}
+            className="button btn"
+            variant="primary"
+            onClick={(event) => {
+              event.preventDefault();
+              onLearnMore(project);
+            }}
+          >
+            Learn More
+          </a>
+        ) : (
+          <button type="button" className="button btn" onClick={() => onLearnMore(project)}>
+            Learn More
+          </button>
+        )}
       </Card.Body>
     </Card>
   );
