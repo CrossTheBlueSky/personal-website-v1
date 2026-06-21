@@ -1,0 +1,12 @@
+{
+  "name": "rmx-resume",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:pdf": "RESUMX_TELEMETRY=0 resumx resume.md -f pdf -o dist/resume"
+  },
+  "dependencies": {
+    "@resumx/resumx": "^0.2.0"
+  }
+}

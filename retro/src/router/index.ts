@@ -30,9 +30,9 @@ const router = createRouter({
     {
       path: '/resume',
       name: 'resume',
-      redirect: to =>{
-        window.open('/src/assets/resume.pdf', '_blank');
-        return '/'
+      redirect: () => {
+        window.open('/retro/resume.pdf', '_blank');
+        return '/';
       }
     },
       

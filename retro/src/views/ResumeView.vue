@@ -1,7 +1,7 @@
 <template>
   <teleport to="body">
     <div class="resume-overlay">
-    <iframe class="resume-iframe" src="/src/assets/resume.pdf" width="100%" height="600px"></iframe>
+    <iframe class="resume-iframe" src="/retro/resume.pdf" width="100%" height="600px"></iframe>
     <button @click="$router.push('/')" class="close-button">Close</button>
     </div>
   </teleport>
