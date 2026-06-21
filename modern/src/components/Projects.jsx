@@ -17,35 +17,31 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      name: "Ebb - A Journaling App",
+      name: "Ebb — Mental State Journal",
       image: "modern/ebb-placeholder.jpeg",
       technologies: ["TypeScript", "React", "Python", "TailwindCSS", "ChartJS", "PostgreSQL"],
-      description: " A journaling app that tracks and visualizes your mood patterns over time",
+      description: "A journaling app that lets you color-code your moods and chart mood trends over time.",
       modalImage: "modern/src/assets/ebb-screenshot.png",
-      github: "https://github.com/CrossTheBlueSky/ebb-journaling-v2",
-      demo: "#"
+      github: "https://github.com/crossthebluesky/ebb-journaling-v2",
     },
     {
       id: 2,
-      name: "D&D Nearby",
+      name: "D&D Nearby: 5e Character Builder",
       image: "modern/nearby-placeholder-2.webp",
       technologies: ["React", "Redux", "Node.js", "MongoDB", "MantineUI"],
-      description: "An App I made to streamline the creation of characters for 5e Dungeons and Dragons.",
+      description: "Streamlines the process and automates the math required to build a character for D&D 5th Edition.",
       modalImage: "modern/src/assets/nearby-screenshot.png",
-      github: "https://github.com/CrossTheBlueSky/DnD-Nearby-5e-Character-Builder",
-      demo: "#"
+      github: "https://github.com/crossthebluesky/DnD-Nearby-5e-Character-Builder",
     },
     {
       id: 3,
       name: "Milestone Fitness",
       image: "modern/milestone-splash-1.png",
       technologies: ["React", "Python", "SQLAlchemy", "Flask", "Bootstrap"],
-      description: " A fitness app that utilizes machine learning to break down large fitness goals into smaller steps.",
+      description: "A fitness app that uses machine learning to break large performance goals into smaller, achievable steps.",
       modalImage: "modern/src/assets/milestone-screenshot.png",
-      github: "https://github.com/CrossTheBlueSky/Milestone-Fitness-App",
-      demo: "#"
+      github: "https://github.com/crossthebluesky/Milestone-Fitness-App",
     },
-
   ];
 
   return (
@@ -68,8 +64,7 @@ function Projects() {
           <p>{activeProject?.description}</p>
           <p><strong>Technologies:</strong> {activeProject?.technologies.join(", ")}</p>
           <div className="d-flex flex-wrap">
-            <a href={activeProject?.github} target="_blank" rel="noopener noreferrer" className="btn btn-primary me-2 mb-2">GitHub Repo</a>
-            <a href={activeProject?.demo} target="_blank" rel="noopener noreferrer" className="btn btn-secondary mb-2">Live Demo</a>
+            <a href={activeProject?.github} target="_blank" rel="noopener noreferrer" className="btn btn-primary me-2 mb-2">View on GitHub</a>
           </div>
         </Modal.Body>
       </Modal>

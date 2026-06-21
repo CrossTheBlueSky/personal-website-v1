@@ -5,15 +5,15 @@
         <img src="/src/assets/pixel-avatar.png" alt="retro-pixel-avatar-of-derek-mercedes">
       </div>
       <div class="home-intro">
-        <h1>Hi there! I'm Derek</h1>
-        <p>I build apps that make life easier and make people more productive</p>
+        <h1>Hello! I&apos;m Derek</h1>
+        <p>Full-stack software engineer specializing in the MERN stack and AWS. I build robust, user-friendly web applications.</p>
       </div>
       <nav class="nav">
         <RouterLink to="/projects">My Projects</RouterLink>
         <RouterLink to="/about">About Me</RouterLink>
         <RouterLink to="/contact">Contact Me</RouterLink>
-        <a href="/resume" target="_blank">My Resume</a>
-        <a href="https://derekmercedes.com/modern">Modern Layout</a>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">My Resume</a>
+        <a href="https://www.derekmercedes.com/modern">Modern Layout</a>
       </nav>
     </div>
   </div>

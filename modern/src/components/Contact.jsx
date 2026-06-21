@@ -21,10 +21,10 @@ function Contact() {
       <Row>
         <Col md={12} className="mb-4 mb-md-0">
           <h3>Get in Touch</h3>
-          <p>Reach out to me via email, or find me at the links below!</p>
+          <p>Reach out via email or connect through the links below.</p>
           <div className="d-flex mb-3 text-center align-items-center justify-content-center">
             <FaEnvelope className="me-2" />
-            <a href="mailto:derek.mercedes@gmail.com">derek.mercedes@gmail.com</a>
+            <a href="mailto:mercedes.derek@gmail.com">mercedes.derek@gmail.com</a>
           </div>
           <div className="mb-3">
             <a href="https://github.com/crossthebluesky" target="_blank" rel="noopener noreferrer" className="me-3">
